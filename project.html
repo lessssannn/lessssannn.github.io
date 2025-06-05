@@ -40,11 +40,12 @@
         .body h1 {
             margin-top: 40px;
             margin-bottom: 20px;
+            font-size: 32px;
         }
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: 1fr;
             gap: 24px;
         }
 
@@ -74,7 +75,19 @@
             font-weight: bold;
         }
 
+        /* Desktop view: 2 columns */
+        @media (min-width: 768px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile responsiveness for heading */
         @media (max-width: 600px) {
+            .body h1 {
+                font-size: 24px;
+            }
+
             .topnav {
                 flex-direction: column;
                 align-items: flex-start;
@@ -115,6 +128,12 @@
                     <p>Nicole & Guy Wedding</p>
                     <a href="https://www.nicoleandguywedding.com/" target="_blank">( nicoleandguywedding.com )</a>
                     <img src="img/nicoleandguy-preview.png" alt="Nicole and Guy Wedding Preview">
+                </div>
+
+                <div class="project">
+                    <p>Pass the PASL 268</p>
+                    <a href="https://passthepasl268.com/" target="_blank">( passthepasl268.com )</a>
+                    <img src="img/passthepasl-preview.png" alt="Pass the PASL Preview">
                 </div>
             </div>
         </div>
