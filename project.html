@@ -6,30 +6,83 @@
     <title>Lenard Nase</title>
     <link rel="stylesheet" href="page.css">
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        .main {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+
+        .links_1 a img,
+        .links_1 img {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+        }
+
+        .body h1 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
         }
 
         .project {
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             padding: 16px;
             border-radius: 8px;
             background-color: #f9f9f9;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
         }
 
         .project img {
             max-width: 100%;
             height: auto;
             border-radius: 6px;
-            margin-top: 10px;
+            margin-top: 12px;
         }
 
         .project p {
             margin: 0;
             font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .topnav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .links_1 {
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
