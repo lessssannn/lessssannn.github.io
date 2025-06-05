@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="icon" href="img/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lenard Nase</title>
-        <link rel="stylesheet" href="page.css">
-    </head>
-    <body>
-        <div class="container">           
-            <div class="topnav">
-                <a href="index.html" class="main">Lenard Nase</a>
-                <div class="links_1">
-                    <a href="https://www.facebook.com/lessssannn" target="_blank"><img src="img/facebook.png" class="fb"></a>
-                    <a href="https://www.instagram.com/lessssannn/" target="_blank"><img src="img/instagram.png" class="ig"></a>
-                    <img src="img/linkedin.png" class="linkedin">
+<head>
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenard Nase</title>
+    <link rel="stylesheet" href="page.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ccc;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .project p {
+            margin: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">           
+        <div class="topnav">
+            <a href="index.html" class="main">Lenard Nase</a>
+            <div class="links_1">
+                <a href="https://www.facebook.com/lessssannn" target="_blank"><img src="img/facebook.png" class="fb"></a>
+                <a href="https://www.instagram.com/lessssannn/" target="_blank"><img src="img/instagram.png" class="ig"></a>
+                <img src="img/linkedin.png" class="linkedin">
+            </div>
+        </div>
+        <div class="body">
+            <h1>Projects</h1>
+            <div class="projects-grid">
+                <div class="project">
+                    <p>Crish' Lashes Beauty Salon</p>
+                    <a href="https://crishlashes.com/" target="_blank">( crishlashes.com )</a>
+                    <img src="img/cllogo.png" alt="Crish Lashes Preview">
+                </div>
+
+                <div class="project">
+                    <p>Rockstar Mums</p>
+                    <a href="https://rockstarmums.com/" target="_blank">( rockstarmums.com )</a>
+                    <img src="img/rockstarmums-preview.png" alt="Rockstar Mums Preview">
+                </div>
+
+                <div class="project">
+                    <p>Hot Fry Media</p>
+                    <a href="https://hotfrymedia.com/" target="_blank">( hotfrymedia.com )</a>
+                    <img src="img/hotfrymedia-preview.png" alt="Hot Fry Media Preview">
+                </div>
+
+                <div class="project">
+                    <p>Nicole & Guy Wedding</p>
+                    <a href="https://www.nicoleandguywedding.com/" target="_blank">( nicoleandguywedding.com )</a>
+                    <img src="img/nicoleandguy-preview.png" alt="Nicole and Guy Wedding Preview">
                 </div>
             </div>
-            <div class="body">
-                <h1>Projects</h1>
-                <ul>
-                    <li>Crish' Lashes Beauty Salon
-                        <div class="crish">
-                            <div class="clweb">
-                                <p>Website. <a href="https://crishlashes.com/" target="_blank">( crishlashes.com ) </a></p>
-                                <div class="cllogo">
-                                    <img src="img/cllogo.png"> 
-                                </div>
-                            </div>
-                            <div class="clsystem"><p>System</p></div>
-                        </div>
-                    </li>
-                    
-                    <li>Rockstar Mums
-                        <div class="project">
-                            <div class="clweb">
-                                <p>Website. <a href="https://rockstarmums.com/" target="_blank">( rockstarmums.com ) </a></p>
-                                <div class="cllogo">
-                                    <img src="img/rockstarmums-preview.png" alt="Rockstar Mums Preview">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>Hot Fry Media
-                        <div class="project">
-                            <div class="clweb">
-                                <p>Website. <a href="https://hotfrymedia.com/" target="_blank">( hotfrymedia.com ) </a></p>
-                                <div class="cllogo">
-                                    <img src="img/hotfrymedia-preview.png" alt="Hot Fry Media Preview">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>Nicole & Guy Wedding
-                        <div class="project">
-                            <div class="clweb">
-                                <p>Website. <a href="https://www.nicoleandguywedding.com/" target="_blank">( nicoleandguywedding.com ) </a></p>
-                                <div class="cllogo">
-                                    <img src="img/nicoleandguy-preview.png" alt="Nicole and Guy Wedding Preview">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- <footer>
-                <p>Lenard Nase | 2022</p>
-            </footer> -->
         </div>
-    </body>
+    </div>
+</body>
 </html>
